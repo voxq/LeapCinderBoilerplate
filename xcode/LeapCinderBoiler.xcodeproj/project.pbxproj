@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		07105BC783D045EC817FD96D /* Cinder-LeapMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 058AC5F08FF74E169F6601BB /* Cinder-LeapMotion.cpp */; };
+		123DF30A6F334725AA77D9C5 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0A5E0E0D9A7A48E88025C76E /* CinderApp.icns */; };
+		2F0488CB18F6F81F0082073F /* NewMedia Fett.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F0488CA18F6F7F90082073F /* NewMedia Fett.ttf */; };
+		2FB78706190CF63F00E991A2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78705190CF63F00E991A2 /* Accelerate.framework */; };
+		2FB7870A190CF64700E991A2 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78709190CF64700E991A2 /* AudioUnit.framework */; };
+		2FB7870C190CF65400E991A2 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB7870B190CF65400E991A2 /* QTKit.framework */; };
+		2FB7870F190CF67E00E991A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78707190CF64300E991A2 /* AudioToolbox.framework */; };
+		2FB78711190CF68400E991A2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78710190CF68400E991A2 /* CoreVideo.framework */; };
+		6DB26C0304E54049A15B5A62 /* LeapCinderBoiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0A21D1824F64D869C01E928 /* LeapCinderBoiler.cpp */; };
+		869B5EBFAEFC45459270F1D1 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 687FD8D4444F45B78CDB9193 /* libLeap.dylib */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC8BBBB1C39B423D87793F1C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				869B5EBFAEFC45459270F1D1 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		058AC5F08FF74E169F6601BB /* Cinder-LeapMotion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = "Cinder-LeapMotion.cpp"; path = "../blocks/LeapMotion/src/Cinder-LeapMotion.cpp"; sourceTree = "<group>"; };
+		0A5E0E0D9A7A48E88025C76E /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2F0488CA18F6F7F90082073F /* NewMedia Fett.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewMedia Fett.ttf"; sourceTree = "<group>"; };
+		2FB78703190CF4D500E991A2 /* Leap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		2FB78704190CF4D500E991A2 /* LeapMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		2FB78705190CF63F00E991A2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		2FB78707190CF64300E991A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2FB78709190CF64700E991A2 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		2FB7870B190CF65400E991A2 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		2FB7870D190CF66D00E991A2 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		2FB78710190CF68400E991A2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2FC6408D18F80AF60095AE44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4EDFA363AEDC40EDBB41F9FA /* LeapCinderBoiler_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapCinderBoiler_Prefix.pch; sourceTree = "<group>"; };
+		687FD8D4444F45B78CDB9193 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../blocks/LeapMotion/lib/macosx/libLeap.dylib; sourceTree = "<group>"; };
+		6A98F0957EAC41B38E6F1C88 /* Cinder-LeapMotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Cinder-LeapMotion.h"; path = "../blocks/LeapMotion/src/Cinder-LeapMotion.h"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* LeapCinderBoiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapCinderBoiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C161235773F04DCEBEB4A87D /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		E6501FA105624C119E20B00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A21D1824F64D869C01E928 /* LeapCinderBoiler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = LeapCinderBoiler.cpp; path = ../src/LeapCinderBoiler.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB78711190CF68400E991A2 /* CoreVideo.framework in Frameworks */,
+				2FB7870F190CF67E00E991A2 /* AudioToolbox.framework in Frameworks */,
+				2FB7870C190CF65400E991A2 /* QTKit.framework in Frameworks */,
+				2FB7870A190CF64700E991A2 /* AudioUnit.framework in Frameworks */,
+				2FB78706190CF63F00E991A2 /* Accelerate.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				CBDBBFFB5D524A94BF18546B /* LeapMotion */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F0A21D1824F64D869C01E928 /* LeapCinderBoiler.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* LeapCinderBoiler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C161235773F04DCEBEB4A87D /* Resources.h */,
+				4EDFA363AEDC40EDBB41F9FA /* LeapCinderBoiler_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F0488CA18F6F7F90082073F /* NewMedia Fett.ttf */,
+				0A5E0E0D9A7A48E88025C76E /* CinderApp.icns */,
+				E6501FA105624C119E20B00B /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FB78710190CF68400E991A2 /* CoreVideo.framework */,
+				2FB7870D190CF66D00E991A2 /* VideoToolbox.framework */,
+				2FB7870B190CF65400E991A2 /* QTKit.framework */,
+				2FB78709190CF64700E991A2 /* AudioUnit.framework */,
+				2FB78707190CF64300E991A2 /* AudioToolbox.framework */,
+				2FB78705190CF63F00E991A2 /* Accelerate.framework */,
+				2FC6408D18F80AF60095AE44 /* Foundation.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B28D03CA8AF423A90E58F32 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				424E3CAD8CCE4D5AAC3F5B28 /* macosx */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		424E3CAD8CCE4D5AAC3F5B28 /* macosx */ = {
+			isa = PBXGroup;
+			children = (
+				687FD8D4444F45B78CDB9193 /* libLeap.dylib */,
+			);
+			name = macosx;
+			sourceTree = "<group>";
+		};
+		CBDBBFFB5D524A94BF18546B /* LeapMotion */ = {
+			isa = PBXGroup;
+			children = (
+				EFF7D9ADF194485DA20FEE71 /* src */,
+				2B28D03CA8AF423A90E58F32 /* lib */,
+			);
+			name = LeapMotion;
+			sourceTree = "<group>";
+		};
+		EFF7D9ADF194485DA20FEE71 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2FB78703190CF4D500E991A2 /* Leap.h */,
+				2FB78704190CF4D500E991A2 /* LeapMath.h */,
+				058AC5F08FF74E169F6601BB /* Cinder-LeapMotion.cpp */,
+				6A98F0957EAC41B38E6F1C88 /* Cinder-LeapMotion.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* LeapCinderBoiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LeapCinderBoiler" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				AC8BBBB1C39B423D87793F1C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapCinderBoiler;
+			productInstallPath = "$(HOME)/Applications";
+			productName = src;
+			productReference = 8D1107320486CEB800E47090 /* LeapCinderBoiler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LeapCinderBoiler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* src */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* LeapCinderBoiler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0488CB18F6F81F0082073F /* NewMedia Fett.ttf in Resources */,
+				123DF30A6F334725AA77D9C5 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB26C0304E54049A15B5A62 /* LeapCinderBoiler.cpp in Sources */,
+				07105BC783D045EC817FD96D /* Cinder-LeapMotion.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				BOOST_PATH = /Users/tyler/Work/code/libraries/boost_1_55_0;
+				CINDER_PATH = /Users/tyler/Work/code/libraries/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LeapCinderBoiler_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"$(BOOST_PATH)\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					../blocks/LeapMotion/lib/macosx/libLeap.dylib,
+				);
+				PRODUCT_NAME = LeapCinderBoiler;
+				SYMROOT = ./build;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src $(CINDER_PATH)/src/AntTweakBar";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				BOOST_PATH = /Users/tyler/Work/code/libraries/boost_1_55_0;
+				CINDER_PATH = /Users/tyler/Work/code/libraries/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LeapCinderBoiler_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"$(BOOST_PATH)\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					../blocks/LeapMotion/lib/macosx/libLeap.dylib,
+				);
+				PRODUCT_NAME = LeapCinderBoiler;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src $(CINDER_PATH)/src/AntTweakBar";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../code/libraries/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../code/libraries/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LeapCinderBoiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LeapCinderBoiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
