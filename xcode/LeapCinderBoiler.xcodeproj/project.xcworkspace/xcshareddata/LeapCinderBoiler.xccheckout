@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>34C9FD81-6717-4876-888A-872C977DF105</string>
+	<string>B226B2BC-AE32-452F-84C3-CC30B7DE1986</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LeapCinderBoiler</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>BEFE3019-D7F8-4C45-A76A-821D65055E6D</key>
-		<string>ssh://aws-tyler/srv/git/FuziDraw.git</string>
+		<key>4A83E52A-DFE5-4EEC-9276-91E44765BD4A</key>
+		<string>https://github.com/voxq/LeapCinderBoilerplate.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>xcode/LeapCinderBoiler.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>BEFE3019-D7F8-4C45-A76A-821D65055E6D</key>
+		<key>4A83E52A-DFE5-4EEC-9276-91E44765BD4A</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://aws-tyler/srv/git/FuziDraw.git</string>
+	<string>https://github.com/voxq/LeapCinderBoilerplate.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>BEFE3019-D7F8-4C45-A76A-821D65055E6D</string>
+	<string>4A83E52A-DFE5-4EEC-9276-91E44765BD4A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>BEFE3019-D7F8-4C45-A76A-821D65055E6D</string>
+			<string>4A83E52A-DFE5-4EEC-9276-91E44765BD4A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>src</string>
 		</dict>
