@@ -164,7 +164,6 @@ DeviceRef Device::create()
 Device::Device()
 {
 	mListener.mMutex	= &mMutex;
-    static Leap::Controller s_controller;
 	mController			= new Leap::Controller( mListener );
 
 	App::get()->getSignalUpdate().connect( bind( &Device::update, this ) );

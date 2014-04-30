@@ -11,13 +11,14 @@
 		07105BC783D045EC817FD96D /* Cinder-LeapMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 058AC5F08FF74E169F6601BB /* Cinder-LeapMotion.cpp */; };
 		123DF30A6F334725AA77D9C5 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0A5E0E0D9A7A48E88025C76E /* CinderApp.icns */; };
 		2F0488CB18F6F81F0082073F /* NewMedia Fett.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F0488CA18F6F7F90082073F /* NewMedia Fett.ttf */; };
+		2FAE81D81911376F005BCCE4 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAE81D71911376F005BCCE4 /* libLeap.dylib */; };
+		2FAE81D919113776005BCCE4 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FAE81D71911376F005BCCE4 /* libLeap.dylib */; };
 		2FB78706190CF63F00E991A2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78705190CF63F00E991A2 /* Accelerate.framework */; };
 		2FB7870A190CF64700E991A2 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78709190CF64700E991A2 /* AudioUnit.framework */; };
 		2FB7870C190CF65400E991A2 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB7870B190CF65400E991A2 /* QTKit.framework */; };
 		2FB7870F190CF67E00E991A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78707190CF64300E991A2 /* AudioToolbox.framework */; };
 		2FB78711190CF68400E991A2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78710190CF68400E991A2 /* CoreVideo.framework */; };
 		6DB26C0304E54049A15B5A62 /* LeapCinderBoiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0A21D1824F64D869C01E928 /* LeapCinderBoiler.cpp */; };
-		869B5EBFAEFC45459270F1D1 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 687FD8D4444F45B78CDB9193 /* libLeap.dylib */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				869B5EBFAEFC45459270F1D1 /* libLeap.dylib in CopyFiles */,
+				2FAE81D919113776005BCCE4 /* libLeap.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +42,7 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2F0488CA18F6F7F90082073F /* NewMedia Fett.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewMedia Fett.ttf"; sourceTree = "<group>"; };
-		2FB78703190CF4D500E991A2 /* Leap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
-		2FB78704190CF4D500E991A2 /* LeapMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		2FAE81D71911376F005BCCE4 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = "../../../../code/libraries/LeapSDK/lib/libc++/libLeap.dylib"; sourceTree = "<group>"; };
 		2FB78705190CF63F00E991A2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		2FB78707190CF64300E991A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2FB78709190CF64700E991A2 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
@@ -51,7 +51,6 @@
 		2FB78710190CF68400E991A2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		2FC6408D18F80AF60095AE44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EDFA363AEDC40EDBB41F9FA /* LeapCinderBoiler_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapCinderBoiler_Prefix.pch; sourceTree = "<group>"; };
-		687FD8D4444F45B78CDB9193 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../blocks/LeapMotion/lib/macosx/libLeap.dylib; sourceTree = "<group>"; };
 		6A98F0957EAC41B38E6F1C88 /* Cinder-LeapMotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Cinder-LeapMotion.h"; path = "../blocks/LeapMotion/src/Cinder-LeapMotion.h"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* LeapCinderBoiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapCinderBoiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161235773F04DCEBEB4A87D /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAE81D81911376F005BCCE4 /* libLeap.dylib in Frameworks */,
 				2FB78711190CF68400E991A2 /* CoreVideo.framework in Frameworks */,
 				2FB7870F190CF67E00E991A2 /* AudioToolbox.framework in Frameworks */,
 				2FB7870C190CF65400E991A2 /* QTKit.framework in Frameworks */,
@@ -153,6 +153,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FAE81D71911376F005BCCE4 /* libLeap.dylib */,
 				2FB78710190CF68400E991A2 /* CoreVideo.framework */,
 				2FB7870D190CF66D00E991A2 /* VideoToolbox.framework */,
 				2FB7870B190CF65400E991A2 /* QTKit.framework */,
@@ -166,27 +167,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2B28D03CA8AF423A90E58F32 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				424E3CAD8CCE4D5AAC3F5B28 /* macosx */,
-			);
-			name = lib;
-			sourceTree = "<group>";
-		};
-		424E3CAD8CCE4D5AAC3F5B28 /* macosx */ = {
-			isa = PBXGroup;
-			children = (
-				687FD8D4444F45B78CDB9193 /* libLeap.dylib */,
-			);
-			name = macosx;
-			sourceTree = "<group>";
-		};
 		CBDBBFFB5D524A94BF18546B /* LeapMotion */ = {
 			isa = PBXGroup;
 			children = (
 				EFF7D9ADF194485DA20FEE71 /* src */,
-				2B28D03CA8AF423A90E58F32 /* lib */,
 			);
 			name = LeapMotion;
 			sourceTree = "<group>";
@@ -194,8 +178,6 @@
 		EFF7D9ADF194485DA20FEE71 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				2FB78703190CF4D500E991A2 /* Leap.h */,
-				2FB78704190CF4D500E991A2 /* LeapMath.h */,
 				058AC5F08FF74E169F6601BB /* Cinder-LeapMotion.cpp */,
 				6A98F0957EAC41B38E6F1C88 /* Cinder-LeapMotion.h */,
 			);
@@ -301,15 +283,19 @@
 				HEADER_SEARCH_PATHS = "\"$(BOOST_PATH)\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LEAP_PATH = "your path to leap";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tyler/Work/code/libraries/LeapSDK/lib/libc++",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
-					../blocks/LeapMotion/lib/macosx/libLeap.dylib,
+					"$(LEAP_PATH)/lib/libc++/libLeap.dylib",
 				);
 				PRODUCT_NAME = LeapCinderBoiler;
 				SYMROOT = ./build;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src $(CINDER_PATH)/src/AntTweakBar";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src $(CINDER_PATH)/src/AntTweakBar $(LEAP_PATH)/include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -337,16 +323,20 @@
 				HEADER_SEARCH_PATHS = "\"$(BOOST_PATH)\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LEAP_PATH = "your path to leap";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tyler/Work/code/libraries/LeapSDK/lib/libc++",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder.a\"",
-					../blocks/LeapMotion/lib/macosx/libLeap.dylib,
+					"$(LEAP_PATH)/lib/libc++/libLeap.dylib",
 				);
 				PRODUCT_NAME = LeapCinderBoiler;
 				STRIP_INSTALLED_PRODUCT = YES;
 				SYMROOT = ./build;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src $(CINDER_PATH)/src/AntTweakBar";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/LeapMotion/src $(CINDER_PATH)/src/AntTweakBar $(LEAP_PATH)/include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
