@@ -11,8 +11,8 @@
 		07105BC783D045EC817FD96D /* Cinder-LeapMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 058AC5F08FF74E169F6601BB /* Cinder-LeapMotion.cpp */; };
 		123DF30A6F334725AA77D9C5 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0A5E0E0D9A7A48E88025C76E /* CinderApp.icns */; };
 		2F0488CB18F6F81F0082073F /* NewMedia Fett.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F0488CA18F6F7F90082073F /* NewMedia Fett.ttf */; };
-		2FAE81D81911376F005BCCE4 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAE81D71911376F005BCCE4 /* libLeap.dylib */; };
-		2FAE81D919113776005BCCE4 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FAE81D71911376F005BCCE4 /* libLeap.dylib */; };
+		2FAE81D5191134AC005BCCE4 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAE81D4191134AC005BCCE4 /* libLeap.dylib */; };
+		2FAE81D6191134B6005BCCE4 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FAE81D4191134AC005BCCE4 /* libLeap.dylib */; };
 		2FB78706190CF63F00E991A2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78705190CF63F00E991A2 /* Accelerate.framework */; };
 		2FB7870A190CF64700E991A2 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB78709190CF64700E991A2 /* AudioUnit.framework */; };
 		2FB7870C190CF65400E991A2 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB7870B190CF65400E991A2 /* QTKit.framework */; };
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				2FAE81D919113776005BCCE4 /* libLeap.dylib in CopyFiles */,
+				2FAE81D6191134B6005BCCE4 /* libLeap.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +42,7 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2F0488CA18F6F7F90082073F /* NewMedia Fett.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewMedia Fett.ttf"; sourceTree = "<group>"; };
-		2FAE81D71911376F005BCCE4 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = "../../../../code/libraries/LeapSDK/lib/libc++/libLeap.dylib"; sourceTree = "<group>"; };
+		2FAE81D4191134AC005BCCE4 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = "../../../../code/libraries/LeapSDK/lib/libc++/libLeap.dylib"; sourceTree = "<group>"; };
 		2FB78705190CF63F00E991A2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		2FB78707190CF64300E991A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2FB78709190CF64700E991A2 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FAE81D81911376F005BCCE4 /* libLeap.dylib in Frameworks */,
+				2FAE81D5191134AC005BCCE4 /* libLeap.dylib in Frameworks */,
 				2FB78711190CF68400E991A2 /* CoreVideo.framework in Frameworks */,
 				2FB7870F190CF67E00E991A2 /* AudioToolbox.framework in Frameworks */,
 				2FB7870C190CF65400E991A2 /* QTKit.framework in Frameworks */,
@@ -153,7 +153,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2FAE81D71911376F005BCCE4 /* libLeap.dylib */,
+				2FAE81D4191134AC005BCCE4 /* libLeap.dylib */,
 				2FB78710190CF68400E991A2 /* CoreVideo.framework */,
 				2FB7870D190CF66D00E991A2 /* VideoToolbox.framework */,
 				2FB7870B190CF65400E991A2 /* QTKit.framework */,
@@ -261,8 +261,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				BOOST_PATH = "your path to boost";
-				CINDER_PATH = "your path to cinder";
+				BOOST_PATH = /Users/tyler/Work/code/libraries/boost_1_55_0;
+				CINDER_PATH = /Users/tyler/Work/code/libraries/cinder_0.8.5_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -283,11 +283,12 @@
 				HEADER_SEARCH_PATHS = "\"$(BOOST_PATH)\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LEAP_PATH = "your path to leap";
+				LEAP_PATH = /Users/tyler/Work/code/libraries/LeapSDK;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tyler/Work/code/libraries/LeapSDK/lib/libc++",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
@@ -304,8 +305,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				BOOST_PATH = "your path to boost";
-				CINDER_PATH = "your path to cinder";
+				BOOST_PATH = /Users/tyler/Work/code/libraries/boost_1_55_0;
+				CINDER_PATH = /Users/tyler/Work/code/libraries/cinder_0.8.5_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -323,15 +324,16 @@
 				HEADER_SEARCH_PATHS = "\"$(BOOST_PATH)\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LEAP_PATH = "your path to leap";
+				LEAP_PATH = /Users/tyler/Work/code/libraries/LeapSDK;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tyler/Work/code/libraries/LeapSDK/lib/libc++",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder.a\"",
-					"$(LEAP_PATH)/lib/libc++/libLeap.dylib",
+					"$(LEAP_PATH)/lib/libLeap.dylib",
 				);
 				PRODUCT_NAME = LeapCinderBoiler;
 				STRIP_INSTALLED_PRODUCT = YES;
