@@ -5,7 +5,10 @@
  * *******************************************************************************/
 
 //cinder header files used
+#ifdef __OSX__
 #import <Foundation/Foundation.h>
+#endif
+
 #include "cinder/app/AppBasic.h"
 #include "cinder/app/AppNative.h"
 #include "cinder/Camera.h"
@@ -43,7 +46,6 @@ class LeapCinderBoilerApp : public ci::app::AppNative
     void keyDown( KeyEvent event );
 
 private:
-    NSView *cinderView;
 	Frame                   mFrame;
 	LeapMotion::DeviceRef	mLeap;
 	void 					onFrame( Leap::Frame frame );
