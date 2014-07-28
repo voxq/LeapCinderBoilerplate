@@ -27,6 +27,8 @@ using namespace Leap;
 using namespace ci;
 using namespace ci::app;
 
+#define __BONES__
+
 class LeapCinderBoilerApp : public ci::app::AppNative
 {
  public:
@@ -101,25 +103,40 @@ void LeapCinderBoilerApp::drawHand(Leap::Hand &hand, Vec3f position)
     const Leap::FingerList& fingers = hand.fingers();
     for ( Leap::FingerList::const_iterator pointIter = fingers.begin(); pointIter != fingers.end(); ++pointIter ) {
         const Leap::Finger& finger = *pointIter;
+    
+        Leap::Vector fingerTipOrigin;
+        Leap::Vector fingerPipPos;
+        Leap::Vector fingerDipPos;
+        Leap::Vector fingerMcpPos;
+
+#ifdef __BONES__
         
         Leap::Bone tipBone = finger.bone(Bone::Type::TYPE_DISTAL);
         Leap::Bone pipBone = finger.bone(Bone::Type::TYPE_INTERMEDIATE);
         Leap::Bone dipBone = finger.bone(Bone::Type::TYPE_PROXIMAL);
         Leap::Bone mcpBone = finger.bone(Bone::Type::TYPE_METACARPAL);
         
-        Leap::Vector fingerTipOrigin =  tipBone.center();
-        Leap::Vector fingerPipPos = pipBone.center();
-        Leap::Vector fingerDipPos = dipBone.center();
-        Leap::Vector fingerMcpPos = mcpBone.center();
+        fingerTipOrigin =  tipBone.center();
+        fingerPipPos = pipBone.center();
+        fingerDipPos = dipBone.center();
+        fingerMcpPos = mcpBone.center();
 
-        fingerTipOrigin -= hand.palmPosition();
         fingerPipPos -= hand.palmPosition();
         fingerDipPos -= hand.palmPosition();
         fingerMcpPos -= hand.palmPosition();
+
+#else
+        fingerTipOrigin =  finger.tipPosition();
+#endif
+        
+        fingerTipOrigin -= hand.palmPosition();
         
         Leap::Matrix fingerTransform;
 
         gl::color( ColorAf::gray( 0.8f ) );
+
+#ifdef __BONES__
+
         gl::drawSphere(LeapMotion::toVec3f(fingerMcpPos), 6);
         gl::drawSphere(LeapMotion::toVec3f(fingerPipPos), 6);
         gl::drawSphere(LeapMotion::toVec3f(fingerDipPos), 6);
@@ -128,6 +145,7 @@ void LeapCinderBoilerApp::drawHand(Leap::Hand &hand, Vec3f position)
         gl::drawLine(LeapMotion::toVec3f(fingerPipPos), LeapMotion::toVec3f(fingerDipPos) );
         gl::drawLine(LeapMotion::toVec3f(fingerDipPos), LeapMotion::toVec3f(fingerTipOrigin) );
 
+        
         fingerTransform = tipBone.basis().rigidInverse();
         gl::pushMatrices();
         gl::translate(LeapMotion::toVec3f(fingerTipOrigin));
@@ -149,6 +167,24 @@ void LeapCinderBoilerApp::drawHand(Leap::Hand &hand, Vec3f position)
         gl::drawColorCube(Vec3f(0,0,0), Vec3f( 10, 10, dipBone.length() ) );
         gl::popMatrices();
 
+#else
+        float mag = finger.direction().dot(-hand.palmNormal());
+        Leap::Vector right = finger.direction().cross(-hand.palmNormal());
+        if (mag < -0.45 || mag > 0.45)
+            right = finger.direction().cross(hand.direction());
+
+        right = right.normalized();
+        Leap::Vector down = finger.direction().cross(right).normalized();
+        Leap::Vector up = -down;
+    
+        fingerTransform = Leap::Matrix(right, up, finger.direction()).rigidInverse();
+        gl::pushMatrices();
+        gl::translate(LeapMotion::toVec3f(fingerTipOrigin*0.5));
+        gl::multModelView(LeapMotion::toMatrix44f(fingerTransform));
+        gl::drawColorCube(Vec3f(0,0,0), Vec3f( 10, 10, finger.length() ) );
+        gl::popMatrices();
+#endif
+        
     }
     if (mStaticOrientHand)
         gl::popMatrices();
