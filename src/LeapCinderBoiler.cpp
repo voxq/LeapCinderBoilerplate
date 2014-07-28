@@ -5,9 +5,6 @@
  * *******************************************************************************/
 
 //cinder header files used
-#ifdef __OSX__
-#import <Foundation/Foundation.h>
-#endif
 
 #include "cinder/app/AppBasic.h"
 #include "cinder/app/AppNative.h"
