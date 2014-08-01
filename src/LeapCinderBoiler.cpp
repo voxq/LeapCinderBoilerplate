@@ -99,11 +99,12 @@ void LeapCinderBoilerApp::drawHand(Leap::Hand &hand, Vec3f position)
         const Leap::Finger& finger = *pointIter;
     
         Leap::Vector fingerTipOrigin;
+
+#ifdef __BONES__
+        
         Leap::Vector fingerPipPos;
         Leap::Vector fingerDipPos;
         Leap::Vector fingerMcpPos;
-
-#ifdef __BONES__
         
         Leap::Bone tipBone = finger.bone(Bone::Type::TYPE_DISTAL);
         Leap::Bone pipBone = finger.bone(Bone::Type::TYPE_INTERMEDIATE);
