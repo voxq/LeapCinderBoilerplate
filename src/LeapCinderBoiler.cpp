@@ -74,10 +74,7 @@ void LeapCinderBoilerApp::drawHand(Leap::Hand &hand, Vec3f position)
     gl::translate(position);
     gl::scale(mScale, mScale, mScale);
     
-    Leap::Vector handXBasis =  hand.palmNormal().cross(hand.direction());
-    Leap::Vector handYBasis = -hand.palmNormal();
-    Leap::Vector handZBasis = -hand.direction();
-    Leap::Matrix handTransform = Leap::Matrix(handXBasis, handYBasis, handZBasis);
+    Leap::Matrix handTransform = hand.basis();
     
     if (!mStaticOrientHand)
     {
@@ -93,8 +90,6 @@ void LeapCinderBoilerApp::drawHand(Leap::Hand &hand, Vec3f position)
         gl::popMatrices();
     else
     {
-        Leap::Matrix fingerPosTransform = Leap::Matrix(handXBasis, handYBasis, handZBasis, hand.palmPosition());
-        fingerPosTransform = fingerPosTransform.rigidInverse();
         gl::pushMatrices();
         gl::multModelView(LeapMotion::toMatrix44f(handTransform));
     }
